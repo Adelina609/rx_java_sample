@@ -1,4 +1,3 @@
-apply plugin: 'org.sonarqube'
 /*
  * Copyright (C) 2017 The Android Open Source Project
  *
@@ -95,11 +94,4 @@ dependencies {
     androidTestImplementation deps.annotations
     androidTestImplementation deps.app_compat
     androidTestImplementation deps.material
-}
-sonarqube {
-  properties {
-    property 'sonar.host.url', 'https://sonarcloud.io'
-    property 'sonar.organization', 'adelina609'
-    property 'sonar.projectKey', 'Adelina609_rx_java_sample'
-  }
 }
